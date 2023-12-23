@@ -14,7 +14,6 @@ const GameCard = ({ game }: Props) => {
       _hover={{
         boxShadow: "lg",
       }}
-      overflow={"hidden"}
     >
       <Image
         src={getCroppedImageUrl(game.background_image)}
@@ -22,7 +21,6 @@ const GameCard = ({ game }: Props) => {
         loading="lazy"
         objectFit={"cover"}
         height={{ md: "200px" }}
-        borderRadius={5}
       />
       <CardBody>
         <Heading fontSize={"2xl"}>{game.name}</Heading>
