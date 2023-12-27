@@ -23,7 +23,9 @@ const GameCard = ({ game }: Props) => {
         height={{ md: "200px" }}
       />
       <CardBody>
-        <Heading fontSize={"2xl"}>{game.name}</Heading>
+        <Heading fontSize={"2xl"} height={"60px"}>
+          {game.name}
+        </Heading>
         <HStack justifyContent={"space-between"}>
           <PlatformIconList
             platforms={game.parent_platforms.map(({ platform }) => platform)}
