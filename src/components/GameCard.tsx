@@ -23,7 +23,7 @@ const GameCard = ({ game }: Props) => {
         height={{ md: "200px" }}
       />
       <CardBody>
-        <Heading fontSize={"2xl"} height={"60px"}>
+        <Heading fontSize={"2xl"} height={"90px"}>
           {game.name}
         </Heading>
         <HStack justifyContent={"space-between"}>
